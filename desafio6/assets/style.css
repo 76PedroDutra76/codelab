@@ -1,0 +1,196 @@
+body{
+    background: rgba(0, 0, 0, .7) url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-position: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#screen{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 45px;
+}
+#screen header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#screen header h2{
+    color: aliceblue;
+    font-family: 'B612', sans-serif;
+    font-weight: 500;
+}
+#screen header h1{
+    position: relative;
+    color: aliceblue;
+    font-family: 'B612', sans-serif;
+    font-size: 70px;
+    top: 50px;
+}
+#screen .principal{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 65px;
+}
+.center{
+    display: grid ;
+    color: aliceblue;
+    font-family: 'B612', sans-serif;
+    grid-template-areas: 'text'
+                         'elements'
+                         'buttons';
+}
+.center .text{
+    grid-area: text;
+    position: relative;
+    bottom: 50px;
+}
+img{
+    width: 184px;
+    height: auto;
+    border-radius: 30px;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    filter: drop-shadow(1px 1px 5px rgb(255, 208, 79));
+    cursor: pointer;
+}
+.center .elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 5px;
+    grid-area: elements;
+    font-weight: bold;
+}
+.timer{
+    position: relative;
+    top: 2px;
+    right: 6px;
+}
+li{
+    display: flex;
+    list-style: none;
+    position: relative;
+    bottom: 6px;
+    gap: 50px;
+}
+li ul{
+    position: relative;
+    display: inline-block;
+    margin-left: -30px;
+}
+li ul svg{
+    width: 25px;
+    height: 25px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    grid-area: buttons;
+    height: 45px;
+    /* position: relative;
+    top: 35px; */
+}
+.buttons button{
+    border-radius: 3px;
+    border: none;
+    background: none;
+    color: aliceblue;
+    font-family: 'B612', sans-serif;
+    font-weight: bold;
+}
+.buttons .assistir{
+    background-color: #0072D2;
+    width: 170px;
+}
+.assistir:hover{
+    background: rgba(29, 146, 255, 0.6);
+    background-blend-mode: multiply;
+    filter: drop-shadow(2px 2px 7px #6697aa);
+    cursor: pointer;
+}
+.assistir:active{
+    background-position: 500px;
+    box-shadow: 0 2px 3px #555555, 0 2px 3px #555555;
+}
+.buttons .trailer{
+    background-color: #131318;
+    border: thin solid aliceblue;
+    width: 100px;
+}
+.trailer:hover{
+    background: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    filter: drop-shadow(2px 2px 7px #17323b);
+    cursor: pointer;
+}
+.trailer:active{
+    background-position: 500px;
+    box-shadow: 0 2px 3px #555555, 0 2px 3px #555555;
+}
+@media (max-width: 930px){
+    #screen{
+        height: 100vh;
+        bottom: 0;
+        top: 0;
+        justify-content: space-between;
+    }
+    #screen .principal{
+        top: 0;
+        bottom: 0;
+        /* position: absolute; */
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+    #screen header{
+        position: relative;
+        top: 30px;
+    }
+    .center{
+        display: grid ;
+        grid-template-areas:
+                             'elements'
+                             'buttons'
+                             'text';
+    }
+    .center .elements{
+        padding: 20px;
+        width: 90%;
+    }
+    .center .text{
+        grid-area: text;
+        display: flex;
+        /* position: relative; */
+        bottom: 0;
+        padding: 20px;
+        background-color: #19191F;
+    }
+    .center .buttons{
+        padding: 20px;
+        background-color: #19191F;
+        justify-content: center;
+        border-radius: 35px 35px 0 0;
+    }
+    img{
+        display: none;
+    }
+
+}

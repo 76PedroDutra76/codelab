@@ -1,0 +1,18 @@
+.cropp-n{
+        width: 1400px !important;
+        height: 450px !important;
+        object-fit: cover !important;
+        object-position: center !important;
+}
+.cropp-n2{
+    width: 1400px !important;
+    height: 450px !important;
+    object-fit: cover !important;
+    object-position: top !important;
+}
+.cropp-n3{
+    width: 1400px !important;
+    height: 450px !important;
+    object-fit: cover !important;
+    object-position: bottom !important;
+}

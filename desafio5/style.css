@@ -1,0 +1,249 @@
+html{
+    background: rgb(0,54,79);
+    background: linear-gradient(346deg, rgba(0,54,79,1) 12%, rgba(98,142,117,1) 73%, rgba(140,199,166,1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;;
+}
+#screen{
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+header #logo{
+    width: 150px;
+    margin-left: 165px;
+}
+header .redes{
+    display: flex;
+    gap: 29px;
+    margin-right: 186px;
+}
+header .redes img{
+    width: 25px;
+}
+header .redes img:hover{
+    transform: scale(1.5);
+    transition: all.2s ease-in-out;
+}
+#face:hover{
+    filter: drop-shadow(0 0 2px #0055ff);
+}
+#insta:hover{
+    filter: drop-shadow(0 0 2px #C13584) ;
+}
+#twitter:hover{
+    filter: drop-shadow(0 0 2px #1DA1F2) ;
+}
+#yt:hover{
+    filter: drop-shadow(0 0 2px #FF0000) ;
+}
+#screen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    display: flex;
+    width: 500px;
+    margin-right: 100px;
+    animation: go-back 1.5s infinite alternate;
+}
+@keyframes go-back{
+    from{
+        transform: translateY(30px);
+    }to{
+        transform: translateY(0);
+    }
+}
+.textos{
+    flex-direction: column;
+    display: flex;
+    margin-left: 170px;
+    color: #fff;
+    gap: 20px;
+}
+.textos .titulo{
+    font-family: "Poppinn", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+/* h1{
+    width: 300px;
+}
+.textos .titulo h1{
+    width: 11ch;
+    white-space: wrap;
+    overflow: hidden;
+    animation: typewriter 5s steps(11), blink 800ms steps(11) infinite normal;
+    border-right: 5px solid white;
+}
+@keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
+  } */
+  .textos .titulo h1{
+    max-width: 350px;
+    /* overflow: hidden;
+    animation: typewriter 5s steps(30); */
+  }
+  /* @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  } */
+  /* .textos .titulo h1::after{
+    content: '|';
+    margin-left: 50px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+  }
+  @keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+  } */
+.textos .titulo #criador{
+    font-family: "Poppinn", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.textos p{
+    font-family: "Poppinn", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+.textos button{
+    background: transparent;
+    border: 3px solid #628E75;
+    color: #fff;
+    gap: 10px;
+    margin: 8px;
+    width: 200px;
+    height: 45px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: skew(-24deg);
+}
+.textos button:hover{
+    transition: all.1s ease-in-out;
+    background-color: #628E75;
+    transform: skew(-24deg);
+}
+.textos button:active{
+    transform: skew(-24deg);
+    background: transparent;
+}
+.textos button p{
+    transform: skew(24deg);
+    font-weight: bold;
+    font-size: 13px;
+}
+#filme{
+    background-color: #628E75;
+}
+#filme:hover{
+    transition: all.1s ease-in-out;
+    background: transparent;
+    transform: skew(-24deg);
+}
+#filme:active{
+    transform: skew(-24deg);
+    background-color: #628E75;
+}
+
+@media (max-width: 910px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        margin-top: 10px;
+    }
+    header #logo{
+        width: 150px;
+        margin-left: 10%;
+    }
+    header .redes{
+        display: flex;
+        gap: 25px;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image img{
+        display: flex;
+        margin-left: 35%;
+        width: 300px;
+    }
+    .textos{
+        flex-direction: column;
+        display: flex;
+        color: #fff;
+        gap: 14px;
+        margin-left: 15%;
+    }
+    .textos .titulo{
+        font-family: "Poppinn", sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+    }
+    .textos p{
+        font-size: 16px;
+    }
+    #trailer{
+        display: none;
+    }
+    #screen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .textos button{
+        margin: 0;
+        width: 200px;
+        height: 45px;
+        margin-bottom: 50px;
+    }
+}

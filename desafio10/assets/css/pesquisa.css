@@ -1,0 +1,35 @@
+.cropp-p{
+    width: 338px !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+section .container .row .navbar form input::placeholder{
+    color: #989898;
+    position: relative;
+    left: 25px;
+}
+section .container .row .navbar form input{
+    height: 60px;
+    border: none;
+    outline: none !important;
+}
+.li-style{
+    border-radius: 5px !important;
+    background: none !important;
+    border: none !important;
+    background-color: #282830 !important;
+    color: #8257E6 !important;
+}
+
+@media(max-width: 1224px) {
+    .disp-none-p{
+        display: none !important;
+    }
+
+    .row-f-response-p{
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+}
