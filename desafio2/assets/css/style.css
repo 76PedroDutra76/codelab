@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --brand-color: #7ca2f4;
+
+    --dark: #121214;
+
+    --gray: #f3f7ff;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+}
+
+.header-content{
+    background: url('../images/image-michael-jordan.png');
+    background-position-y: -70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--gray) !important;
+    height: 350px;
+}
+
+.header-content h3{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.header-content p{
+    font-weight: 400;
+    font-size: 1,5rem;
+}
+
+.page-content {
+    margin-top: 2.5rem;
+    max-width: 100%;
+}
+
+.contents-header{
+    text-align: center;
+    color: var(--dark) !important;
+}
+
+.contents-header h3{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.contents-header p{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.contents-body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 100px !important;
+    align-items: start;
+    justify-content: center;
+}
+
+.content-card{
+    width: 24rem;
+    height: 100%;
+}
+
+.card-header {
+    background-color: var(--gray) !important;
+    width: 24rem;
+    height: 12.5rem;
+    border-radius: 5px !important;
+}
+
+.card-body{
+    width: 24rem;
+    height: 7rem;
+    font-weight: 500;
+    color: var(--dark) !important;
+}
+
+.card-body h1{
+    font-size: 1.1rem;
+}
+
+.card-body span{
+    color: var(--brand-color) !important;
+    font-size: 1rem;
+}
+
+.card-body p{
+    font-size: 1.2rem;
+}
+
+footer{
+    font-weight: 800;
+}
+
+@media (max-width: 1310px) {
+    .header-content{
+        background-position-y: -20px;
+    }
+
+    .contents-body{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 790px) {
+    .header-content{
+        background-position-y: 0px;
+    }
+    
+    .contents-header h3{
+        font-size: 1.2rem;
+    }
+    
+    .contents-header p{
+        font-size: 1rem;
+    }
+
+    .contents-body{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+    }
+}
